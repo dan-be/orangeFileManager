@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>File Explorer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--<link href="bootstrap/css/bootstrap.css" rel="stylesheet">-->
+		<link href="style.css" rel="stylesheet">
+
+		<script src="js/jquery-1.7.2.js"></script>
+
+		<script src="js/jqsimplemenu.js"></script>
+		<link rel="stylesheet" href="css/jqsimplemenu.css">
+
+		<!--<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
+		<script src="js/ui/jquery.ui.core.js"></script>
+		<script src="js/ui/jquery.ui.widget.js"></script>
+		<script src="js/ui/jquery.ui.position.js"></script>
+		<script src="js/ui/jquery.ui.menu.js"></script>-->
+
+		<script type="text/javascript" src="main.js"></script>
+
+		<style>
+			.menu {
+				margin-top: 20px !important;
+			}
+
+			.menu > li:hover {
+				background-color: lightblue;
+			}
+		</style>
+		<script>
+		</script>
+	</head>
+	<body>
+		<div id="menuContainer">
+			<ul class="jq-menu">
+				<li>
+					<a href="http://www.egrappler.com">Home</a>
+				</li>
+				<li>
+					<a href="http://www.egrappler.com/about">About</a>
+				</li>
+				<li>
+					<a href="#">Services </a>
+					<ul>
+						<li>
+							<a href="#">Sofware Development</a>
+							<ul>
+								<li>
+									<a href="#">Web Apps</a>
+								</li>
+								<li>
+									<a href="#">Widgets</a>
+									<ul>
+										<li>
+											<a href="#">jQuery Plugins</a>
+										</li>
+										<li>
+											<a href="#">Asp.NET Controls</a>
+										</li>
+										<li>
+											<a href="#">Salesforce Integration</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Interface Design</a>
+						</li>
+						<li>
+							<a href="#">Technical Writing</a>
+						</li>
+						<li>
+							<a href="#">Resume Writing</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Portfolio</a>
+					<ul>
+						<li>
+							<a href="#">Web Appliations</a>
+						</li>
+						<li>
+							<a href="#">SaaS</a>
+						</li>
+						<li>
+							<a href="#">Windows Applications</a>
+						</li>
+						<li>
+							<a href="#">Mobile Applications</a>
+						</li>
+						<li>
+							<a href="#">Server Applications</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="http://www.egrappler.com">Blog</a>
+				</li>
+				<li>
+					<a href="http://www.egrappler.com">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mainContainer">
+			<div id="sidebar" >
+				<div id="bookmarksContainer">
+					<div id="bookmarksLabel">
+						Bookmarks
+					</div>
+					<div id="addBookmarkBtn" onclick="addBookmark()">
+						Add Bookmark
+					</div>
+					<div id="bookmarksList"></div>
+					</ul>
+				</div>
+			</div>
+
+			<div id="folderArea">
+				<div class="row">
+					<ul id="addressbar" class="breadcrumb"></ul>
+				</div>
+				<div class="row" style="background: #FFF; -webkit-border-radius: 2px; margin: -5px 1px 0 -19px; height: 100%; overflow: auto">
+					<ul style="margin: 5px;" id="files"></ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="snippets">
+			<div id="bookmarkSnip">
+				<div class='bookmark'>
+					<div class='removeBookmarkBtn' onclick="deleteBookmark(this)">
+						X
+					</div>
+					<div class='bookmarkLink' onclick='bookmarkClicked(this)'></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

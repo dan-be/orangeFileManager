@@ -1,0 +1,18 @@
+<config>
+	<bookmarks>
+		<bookmark name="test1">/media/owner/New Volume/daniel_backup/</bookmark>
+		<bookmark name="2">/media/owner/New Volume/daniel_backup/diagrams</bookmark></bookmarks>
+	<mounts>
+		<mount id="GrandpaScannedLetters">
+	</mounts>
+	<providers>
+		<provider id="provider1" 
+				mount_id="GrandpaScannedLetters"
+				path="/media/owner/New Volume/daniel_backup/todo/GrandpaScannedLetters"
+				></provider>
+		<provider id="provider2" 
+				mount_id="GrandpaScannedLetters"
+				path="/media/owner/New Volume/daniel_backup/pictures/GrandpaScannedLetters"
+				></provider>
+	</providers>
+</config>

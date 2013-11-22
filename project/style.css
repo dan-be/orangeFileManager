@@ -1,0 +1,135 @@
+* {
+  -webkit-user-select: none;
+}
+
+body {
+  background-image: url('images/htmlbg.png')
+}
+
+.files {
+  padding: 0;
+  margin: 0;
+}
+
+.file {
+  padding: 2px;
+  margin: 2px;
+  width: 80px;
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: top;
+}
+
+.file.focus {
+  background-color: #08C;
+  -webkit-border-radius: 4px;
+}
+
+.file .name {
+  width: 80px;
+  word-wrap: break-word;
+}
+
+.file.focus .name {
+  color: white;
+}
+
+.file .icon {
+  margin: auto;
+  margin-top: 0;
+  width: 60px;
+}
+
+.file.focus .icon {
+  -webkit-filter: invert(20%);
+}
+
+#bookmarksContainer{
+    background-color: lightgrey;
+    
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#bookmarksLabel{
+    font-weight: bold;
+    
+}
+
+#addBookmarkBtn{
+    border-radius: 10px;
+    
+    background-color: lightblue;
+    padding: 5px 5px 5px 21px;
+}
+
+
+#addBookmarkBtn:hover{
+    background-color: lightgreen;
+    cursor:pointer;
+}
+
+.bookmarkLink{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.removeBookmarkBtn{
+    cursor: pointer;
+    padding: 5px;
+    width: 15px;
+    
+    color: red;
+    display: inline-block;
+}
+
+#mainContainer{
+	position: absolute; 
+	left: 10px; 
+	right: 10px; 
+	top: 64px; 
+	bottom: 10px;
+}
+ 
+#sidebar{
+	float: left; 
+	width: 172px; 
+	padding: 8px;
+}
+
+#snippets{
+    display: none;
+    
+}
+
+#menuContainer ul{
+    z-index: 100;
+    
+}
+
+#folderArea{
+	float: left; 
+	position: absolute; 
+	left: 210px; 
+	right: 0; 
+	top: 0; 
+	bottom: 50px;
+}
+
+#addressbar li{
+    display: inline-block;
+    
+    list-style-type: none;
+}
+
+#addressbar{
+    padding-left: 0px;
+    
+}
+
+.file .icon > img{
+    width: 60px;
+    
+}
