@@ -1,4 +1,4 @@
-<config>
+<config test="1">
 	<bookmarks>
 		<bookmark name="test1">/media/owner/New Volume/daniel_backup/</bookmark>
 		<bookmark name="2">/media/owner/New Volume/daniel_backup/diagrams</bookmark></bookmarks>
